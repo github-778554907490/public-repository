@@ -1,0 +1,9 @@
+schemaVersion: 2.0.0
+metadata:
+  name: public-repository-2
+components:
+  - name: test
+    container:
+      image: 964516670147.dkr.ecr.us-west-2.amazonaws.com/aws-cloud-9-al-2-default-customer-image:latest
+      mountSources: true
+      command: ['sleep', 'infinity']
