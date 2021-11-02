@@ -1,0 +1,9 @@
+schemaVersion: 2.0.0
+metadata:
+  name: public-repository-ecr
+components:
+  - name: test
+    container:
+      image: public.ecr.aws/ubuntu/ubuntu:latest
+      mountSources: true
+      command: ['sleep', 'infinity']
