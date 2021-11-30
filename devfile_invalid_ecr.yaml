@@ -1,0 +1,9 @@
+schemaVersion: 2.0.0
+metadata:
+  name: non-existent-ecr
+components:
+  - name: test
+    container:
+      image: 123456789000.dkr.ecr.us-west-2.amazonaws.com/non-existent-customer-image:latest
+      mountSources: true
+      command: ['sleep', 'infinity']
